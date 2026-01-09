@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LimeWire* Pro v4.9</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="window">
+    <div class="title-bar">
+      LimeWire* Pro v4.9
+    </div>
+
+    <div class="controls">
+      <input type="text" placeholder="Search the Gnutella Network" disabled />
+      <button id="recommendedBtn">Recommended for You</button>
+    </div>
+
+    <div class="main">
+      <h2 id="sectionTitle">Popular Downloads</h2>
+      <ul id="fileList">
+        <!-- populated by JS -->
+      </ul>
+    </div>
+
+    <div class="download-panel hidden" id="downloadPanel">
+      <div class="progress-text" id="progressText">Connecting to peer...</div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="percent" id="percent">0%</div>
+    </div>
+
+    <div class="modal hidden" id="completeModal">
+      <h3>Download Complete</h3>
+      <p id="completionMessage"></p>
+      <button id="spotifyBtn">Play on Spotify</button>
+      <button id="closeModal">Download Another File</button>
+    </div>
+
+    <div class="status-bar">
+      Status: Connected to 4,281,113 users • Happy Birthday Kevin
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
